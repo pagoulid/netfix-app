@@ -11,3 +11,143 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.logo{height:4rem;}
+h1,h2,h3,h4,h5,h6,p{
+  width:fit-content;
+  color:white;
+}
+.section.black{background-color:black;}
+.section.top { 
+  position:relative;
+  z-index:0;
+ }
+.section.top .bckrnd{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+.section{padding:0.5rem;}
+.section:where(.top,.middle) .container,.section.top .container>div, .top-buttons{
+  display:flex;
+  justify-content:space-between;
+}
+.section.top .container>div, .top-buttons{align-items:center;}
+.section.top .container,.form{
+  flex-direction:column;
+  gap:2rem;
+}
+.top-buttons{gap:0.5rem;}
+
+.section.top :where(h2,h5,h6), .section h2{
+  text-align:center;
+  width:100%;
+
+}
+
+.top-buttons button{
+  border-radius:5px;
+  padding:0.75rem 2rem;
+}
+.lang{
+  background-color:slategray;
+  color:black;
+}
+.sign{
+  background-color:red;
+  color:white;
+}
+.form{
+  width:75%;
+  margin:auto;
+  flex-direction:column;
+  align-items:center;
+  gap:2rem;
+}
+.form input{
+  width:100%;
+  height:35px;
+  max-width:800px;
+  text-align:center;
+}
+
+.form .sign{
+  border-radius:9px;
+  padding:0.75rem;
+}
+
+
+.section-block{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.section-block.reverse{flex-direction:row-reverse;}
+.section-block>*{width:45%;}
+#section-2 img{transform:scale(0.5)!important}
+.frame{
+  position:relative;
+  z-index:0;
+}
+.frame img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  position:relative;
+  z-index:2;
+}
+.frame video{
+
+  width:72%;
+  height:auto;
+  position:absolute;
+  left:50.5%;
+  transform:translateX(-51%);
+  top:5%;
+  z-index:1;
+}
+
+
+footer{
+  background-color:grey;
+  color:black!important;
+  overflow:hidden;
+
+}
+footer h4{margin-left:0.25rem;}
+footer h5{margin:auto;}
+
+footer ul{list-style-type: none;}
+footer .lists{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  padding:1rem 0; 
+  align-items:center;
+}
+.lists ul{padding-left:0;}
+
+@media only screen and (min-width:1050px){
+  .content{
+    width:75%;
+    margin:auto;
+
+  }
+}
+@media only screen and (max-width:800px){
+  footer .lists{
+    /*width:75%;
+    margin:auto;*/
+    justify-content:space-between;
+    
+  }
+}
+@media only screen and (max-width:700px){
+  .section-block>*{width:75%;}
+  .section-block,.section-block.reverse{
+    flex-direction:column;
+    justify-content:center;
+  }
+  .section-block{text-align:center;}
+  
+}
