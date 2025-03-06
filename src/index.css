@@ -87,11 +87,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .section-block.reverse{flex-direction:row-reverse;}
 .section-block>*{width:45%;}
-#section-1{
+#section-1,#section-3{
   margin-top:4rem;
   margin-bottom:4rem;
 }
 #section-2 img{transform:scale(0.5)!important}
+#section-3 img{transform:scale(1.1)!important}
 .frame{
   position:relative;
   z-index:0;

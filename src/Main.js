@@ -26,6 +26,20 @@ export default function Main(){
 
         }
     }
+
+    let scontent2={
+        id:3,
+        header:"Watch Everywhere",
+        text:"Strean Unlimited movies and Tv shows on your phone, tablet, laptop without paying more.",
+        frame:{
+            
+            image:require('./resources/Section3-tv.png'),
+            videosrc:require('./resources/Section3-video-tv.webm'),
+            videoformat:'video/webm',
+
+
+        }
+    }
     let flist=['Help Center','Jobs','Terms of Use','Contact Us']
     let slist=['FAQ','Investor Relations','Ways To Watch','Corporate Information']
     let tlist=['Account','Redeem Gift Cards','Privacy','Speed Test']
@@ -36,6 +50,7 @@ export default function Main(){
             <Top />
             <Section id={scontent.id} background={'black'} header={scontent.header} text={scontent.text} isReverse={false} hasFrame={true} visual={scontent.frame} />
             <Section id={scontent1.id} background={'black'} header={scontent1.header} text={scontent1.text} isReverse={true} hasFrame={false} visual={scontent1.frame} />
+            <Section id={scontent2.id} background={'black'} header={scontent2.header} text={scontent2.text} isReverse={false} hasFrame={true} visual={scontent2.frame} />
             <Footer  header={'Netflix'} text={'Questions? Contact us.'} lists={Tlist} />
         </>
     )
