@@ -3,10 +3,11 @@ import Section from './sections/Section'
 import Footer from './sections/Footer'
 export default function Main(){
     let scontent={
+        id:1,
         header:"Enjoy on your TV",
         text:"Watch on Smart Tv's, Playstation, Xbox, Chromecast, Blu-ray players, AppleTV and more",
         frame:{
-            id:1,
+            
             image:require('./resources/tv.png'),
             videosrc:require('./resources/video-tv.mp4'),
             videoformat:'video/mp4',
